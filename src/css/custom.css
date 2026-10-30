@@ -1,0 +1,120 @@
+
+/* Navy Blue and White Portfolio Theme */
+
+:root {
+  --ifm-color-primary: #17365d;
+  --ifm-color-primary-dark: #142f53;
+  --ifm-color-primary-darker: #122b4c;
+  --ifm-color-primary-darkest: #0e233e;
+  --ifm-color-primary-light: #204675;
+  --ifm-color-primary-lighter: #275284;
+  --ifm-color-primary-lightest: #37669b;
+
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: #243447;
+  --ifm-heading-color: #17365d;
+  --ifm-link-color: #17365d;
+  --ifm-link-hover-color: #37669b;
+
+  --ifm-font-family-base: 'Segoe UI', Arial, sans-serif;
+  --ifm-heading-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Keep the same navy and white appearance
+   even when dark mode is selected */
+[data-theme='dark'] {
+  --ifm-color-primary: #17365d;
+  --ifm-color-primary-dark: #142f53;
+  --ifm-color-primary-darker: #122b4c;
+  --ifm-color-primary-darkest: #0e233e;
+  --ifm-color-primary-light: #204675;
+  --ifm-color-primary-lighter: #275284;
+  --ifm-color-primary-lightest: #37669b;
+
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-color-base: #243447;
+  --ifm-heading-color: #17365d;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #17365d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar__title,
+.navbar__link,
+.navbar__toggle {
+  color: #ffffff;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #dce9fa;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container {
+  background-color: #f1f5fa;
+  border-right: 1px solid #dce5ef;
+}
+
+.menu__link {
+  color: #17365d;
+}
+
+.menu__link--active,
+.menu__link:hover {
+  background-color: #dce9fa;
+  color: #102a43;
+}
+
+/* Documentation headings */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  color: #17365d;
+  font-weight: 700;
+}
+
+/* Documentation text */
+.markdown p,
+.markdown li {
+  color: #243447;
+}
+
+/* Buttons */
+.button--primary {
+  background-color: #17365d;
+  border-color: #17365d;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #102a43;
+  border-color: #102a43;
+  color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  background-color: #102a43;
+  color: #ffffff;
+}
+
+.footer__title,
+.footer__link-item,
+.footer__copyright {
+  color: #ffffff;
+}
+
+/* Mobile navigation */
+.navbar-sidebar {
+  background-color: #ffffff;
+}
+
+.navbar-sidebar .menu__link {
+  color: #17365d;
+}
