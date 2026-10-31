@@ -138,7 +138,7 @@ projectName: 'technical-writing-portfolio',
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-github-username',
+                href: 'https://github.com/shuba-techwriter',
                 target: '_blank',
                 rel: 'noopener noreferrer',
               },
