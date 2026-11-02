@@ -67,6 +67,36 @@ Before accessing EMS, ensure that you have:
 
 ---
 
+
+## Document Conventions
+
+This guide uses the following conventions to highlight additional information, potential risks, and useful recommendations.
+
+### Note
+
+Provides additional information that helps users understand a task or complete it correctly.
+
+:::note
+Employee IDs must be unique. Make sure you enter a unique ID when adding a new employee.
+:::
+
+### Warning
+
+Highlights potential risks or actions that may result in unintended changes or data loss.
+
+:::warning
+Deactivating an employee prevents the employee from accessing the EMS application. Verify the employee record before proceeding.
+:::
+
+### Tip
+
+Provides a useful suggestion, shortcut, or recommended practice.
+
+:::tip
+Use the employee ID in the search field to locate an employee record quickly.
+:::
+
+
 ## 3. Accessing the Employee Management System
 
 ### 3.1 Sign in to EMS
