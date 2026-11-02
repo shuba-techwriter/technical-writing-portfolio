@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
@@ -58,203 +59,84 @@ export default function Home() {
       title="Technical Writing Portfolio"
       description="Senior Technical Writer with 18+ years of experience in technical documentation, content strategy, Docs-as-Code, and API documentation."
     >
-      <main style={{backgroundColor: '#f5f8fc'}}>
+      <main className="homepage">
 
         {/* HERO SECTION */}
-        <section
-          style={{
-            background: 'linear-gradient(135deg, #102a4c, #17365d)',
-            color: '#ffffff',
-            textAlign: 'center',
-            padding: '85px 20px 75px',
-          }}
-        >
-          <div style={{maxWidth: '900px', margin: '0 auto'}}>
-            <p
-              style={{
-                color: '#c7d9ef',
-                fontSize: '13px',
-                fontWeight: 'bold',
-                letterSpacing: '2px',
-              }}
-            >
-              SENIOR TECHNICAL WRITER | 18+ YEARS OF EXPERIENCE
-            </p>
+        <section className="hero-section">
+          <div className="hero-content">
 
-            <h1
-              style={{
-                color: '#ffffff',
-                fontSize: 'clamp(34px, 5vw, 52px)',
-                marginTop: '20px',
-                marginBottom: '15px',
-              }}
-            >
-              Technical Writing Portfolio
+            <h1 className="hero-name">
+              Shuba Nandini
             </h1>
 
-            <h2
-              style={{
-                color: '#dce9fa',
-                fontSize: 'clamp(20px, 3vw, 28px)',
-                fontWeight: '500',
-              }}
-            >
+            <p className="hero-subtitle">
+              Senior Technical Writer | 18+ Years of Experience
+            </p>
+
+            <h2 className="hero-tagline">
               Simplifying Technology. Empowering Users.
             </h2>
 
-            <p
-              style={{
-                fontSize: '17px',
-                lineHeight: '1.9',
-                color: '#e0eaf7',
-                marginTop: '24px',
-              }}
-            >
+            <p className="hero-description">
               I create clear, accurate, and user-focused technical
               documentation that connects technology with people.
               My expertise spans technical documentation, content
               strategy, Docs-as-Code, and API documentation.
             </p>
 
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                flexWrap: 'wrap',
-                gap: '15px',
-                marginTop: '35px',
-              }}
-            >
+            <div className="hero-buttons">
               <a
                 href={resumeUrl}
                 download="Senior_Technical_Writer_Resume.pdf"
-                className="button button--secondary button--lg"
-                style={{
-                  backgroundColor: '#ffffff',
-                  color: navy,
-                  borderColor: '#ffffff',
-                  fontWeight: 'bold',
-                }}
+                className="button button--secondary button--lg resume-button"
               >
                 ↓ Download My Resume
               </a>
 
               <Link
                 to="/docs/intro"
-                className="button button--outline button--lg"
-                style={{
-                  borderColor: '#ffffff',
-                  color: '#ffffff',
-                  fontWeight: 'bold',
-                }}
+                className="button button--outline button--lg work-button"
               >
                 Explore My Work →
               </Link>
             </div>
+
           </div>
         </section>
 
         {/* PROFESSIONAL PROFILE */}
-        <section
-          style={{
-            maxWidth: '1150px',
-            margin: '0 auto',
-            padding: '70px 20px',
-          }}
-        >
-          <div style={{textAlign: 'center', marginBottom: '45px'}}>
-            <p
-              style={{
-                color: '#386ca3',
-                fontWeight: 'bold',
-                letterSpacing: '2px',
-                fontSize: '13px',
-              }}
-            >
+        <section className="profile-section">
+          <div className="profile-heading">
+            <p className="section-eyebrow">
               PROFESSIONAL PROFILE
             </p>
 
-            <h2 style={{color: navy, fontSize: '34px'}}>
-              Experience. Expertise. Aspirations.
-            </h2>
+            <h2>Experience. Expertise. Aspirations.</h2>
 
-            <p style={{color: '#596b80', fontSize: '16px'}}>
+            <p>
               Learn more about my professional goals, capabilities,
               and technical writing journey.
             </p>
           </div>
 
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns:
-                'repeat(auto-fit, minmax(min(100%, 290px), 1fr))',
-              gap: '24px',
-              alignItems: 'stretch',
-            }}
-          >
+          <div className="profile-grid">
             {sections.map((section) => (
-              <article
-                key={section.number}
-                style={{
-                  backgroundColor: '#ffffff',
-                  border: '1px solid #dce5f0',
-                  borderRadius: '12px',
-                  padding: '30px',
-                  boxShadow: '0 8px 25px rgba(23,54,93,0.06)',
-                }}
-              >
-                <div
-                  style={{
-                    color: '#4878ae',
-                    fontWeight: 'bold',
-                    fontSize: '14px',
-                    marginBottom: '22px',
-                  }}
-                >
+              <article className="profile-card" key={section.number}>
+                <div className="profile-number">
                   {section.number}
                 </div>
 
-                <h3
-                  style={{
-                    color: navy,
-                    fontSize: '23px',
-                    marginBottom: '8px',
-                  }}
-                >
-                  {section.title}
-                </h3>
+                <h3>{section.title}</h3>
 
-                <p
-                  style={{
-                    color: '#386ca3',
-                    fontWeight: 'bold',
-                    fontSize: '14px',
-                  }}
-                >
+                <p className="profile-subtitle">
                   {section.subtitle}
                 </p>
 
-                <p
-                  style={{
-                    color: '#52647a',
-                    fontSize: '14px',
-                    lineHeight: '1.8',
-                    marginTop: '20px',
-                  }}
-                >
+                <p className="profile-description">
                   {section.description}
                 </p>
 
-                <ul
-                  style={{
-                    paddingLeft: '20px',
-                    marginTop: '20px',
-                    color: '#344c68',
-                    fontSize: '14px',
-                    lineHeight: '1.9',
-                  }}
-                >
+                <ul>
                   {section.skills.map((skill) => (
                     <li key={skill}>{skill}</li>
                   ))}
@@ -265,26 +147,11 @@ export default function Home() {
         </section>
 
         {/* DOCUMENTATION PORTFOLIO */}
-        <section
-          style={{
-            backgroundColor: '#e8f0f9',
-            padding: '65px 20px',
-            textAlign: 'center',
-          }}
-        >
-          <div style={{maxWidth: '800px', margin: '0 auto'}}>
-            <h2 style={{color: navy, fontSize: '32px'}}>
-              Explore My Documentation Portfolio
-            </h2>
+        <section className="documentation-section">
+          <div className="documentation-content">
+            <h2>Explore My Documentation Portfolio</h2>
 
-            <p
-              style={{
-                color: '#50647b',
-                lineHeight: '1.9',
-                fontSize: '16px',
-                margin: '20px 0 30px',
-              }}
-            >
+            <p>
               Explore my work across user guides, installation
               and troubleshooting documentation, API references,
               release notes, Docs-as-Code, content strategy,
@@ -293,12 +160,7 @@ export default function Home() {
 
             <Link
               to="/docs/intro"
-              className="button button--primary button--lg"
-              style={{
-                backgroundColor: navy,
-                borderColor: navy,
-                color: '#ffffff',
-              }}
+              className="button button--primary button--lg documentation-button"
             >
               View My Documentation →
             </Link>
